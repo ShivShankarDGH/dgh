@@ -1,5 +1,7 @@
 import React from 'react';
+
 import './app.css';
+import photofile from './images/photofile.png';
 
 class App extends React.Component {
   constructor(props) {
@@ -11,7 +13,6 @@ class App extends React.Component {
       value: " ",
       isLaunch: " ",
       isLanding: " "
-
     };
     this.handleLanding = this.handleLanding.bind(this);
     this.handleLaunch = this.handleLaunch.bind(this);
@@ -166,9 +167,15 @@ class App extends React.Component {
                 // }else{
                 //  years.push(items[k].launch_year)
                 // }
-                 
+                let src;
+                if (items[k].links.mission_patch_small === null) {
+                  src = photofile
+                }else{
+                  src = (items[k].links.mission_patch_small)
+                }
+
                 return( <div className="item" key={k}>
-                  {<React.Fragment><img className="image" src={items[k].links.mission_patch_small} alt="mission_patch_small" /><table><thead><tr><td colSpan="2" className="thead">{items[k].mission_name}# {items[k].flight_number}</td></tr></thead><tbody><tr><td>Mission Ids</td><td className="right">{items[k].mission_id}</td></tr><tr><td>launch Year</td><td className="right">{items[k].launch_year}</td></tr><tr><td>Launch Success</td><td className="right">{is_launch_success}</td></tr><tr><td>success Landing</td><td className="right">{is_landing_success}</td></tr></tbody></table></React.Fragment>}
+                  {<React.Fragment><img className="image" src={src} alt="img" /><table><thead><tr><td colSpan="2" className="thead">{items[k].mission_name}# {items[k].flight_number}</td></tr></thead><tbody><tr><td>Mission Ids</td><td className="right">{items[k].mission_id}</td></tr><tr><td>launch Year</td><td className="right">{items[k].launch_year}</td></tr><tr><td>Launch Success</td><td className="right">{is_launch_success}</td></tr><tr><td>success Landing</td><td className="right">{is_landing_success}</td></tr></tbody></table></React.Fragment>}
                 </div>);
             })}
           </div>
