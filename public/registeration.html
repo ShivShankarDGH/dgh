@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Registration - Form</title>
+        <style>
+            * {margin: 0px; padding: 0px; box-sizing: border-box;}
+            body {background-color: #d1d1d1;}
+			
+            section {width: 514px; height: 684px; margin: 0 auto; background-color: #20242d; box-shadow: 0px 0px 10px 0px black;}
+			
+            .header {/*width: 514px; height: 84px;*/ padding: 12px; background-color: #1d2127;
+                box-shadow: 0px 2px 4px black; text-align: center;
+            }
+            .header span {
+                font-size: 42px; color:#13181a; padding-left: 4px;
+                text-shadow: 
+                    -1px -1px 0 rgba(0, 0, 0, 1),
+                    1px -1px 2px rgba(103, 103, 103, 0.4),
+                    -1px 1px 1px rgba(103, 103, 103, 0.5),
+                    1px 1px 0 rgba(0, 0, 0, 0.7);
+            }
+            form { width: 64%; padding: 42px 0px; margin: 0 auto;
+            }
+            input[type=text], input[type=email], input[type=tel], input[type=password] {
+                width: 100%;
+               /* background-color: #13181b; color: #676767; border-radius: 4px; font-size: 16px; 
+                box-shadow: 1px 1px 2px rgba(103, 103, 103, 0.4), 2px 3px 5px rgba(0, 0, 0, 0.7) inset*/
+            }
+            input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, input[type=password]:focus {
+                color: #ffffff;
+            }
+            input.form-control {background-color: #13181b; color: #676767; border-radius: 4px; font-size: 16px; padding: 12px 16px; margin: 12px 0; border: none;
+                box-shadow: 1px 1px 2px rgba(103, 103, 103, 0.4), 2px 3px 5px rgba(0, 0, 0, 0.7) inset
+            }
+            input[type=checkbox] {
+                width: 16px; height: 16px; box-shadow: none;
+            }
+            span { color: #676767; }
+            input[type=button] {
+                width: 100px; height: 48px; float: right; cursor: pointer;  box-shadow: none;
+            }
+        </style>
+    </head>
+    <body>
+        <section>
+            <div class="header">
+                <img src="../src/images/pepole-icon.png" alt="pepole-icon.png">
+                <span>Register</span>
+            </div>
+            <form>
+                <input type="text" class="form-control" placeholder="First Name">
+                <input type="text" class="form-control" placeholder="Last Name">
+                <input type="email" class="form-control" placeholder="Email ID">
+                <input type="tel" class="form-control" placeholder="Phone">
+                <input type="password" class="form-control" placeholder="Password">
+                <input type="password" class="form-control" placeholder="Conform Password">
+                <input type="checkbox" class="form-control">
+                <span style="padding-left: 16px; font-size: 18px; display: inline;">
+                    I agree to the Terms and Conditions
+                </span>
+                <input type="button" class="form-control">
+            </form>
+        </section>
+    </body>
+</html>

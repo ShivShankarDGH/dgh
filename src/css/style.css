@@ -1,0 +1,209 @@
+* { margin: 0px; padding: 0px; box-sizing: border-box; }
+body { background: #d2d2d2; font-family: sarif, Arial; }
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    /*cursor: pointer;*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 232px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 4;
+    bottom: 125%;
+    left: 0%;
+    margin-left: -100px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle  hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.box { width: 100%; font-size: 1.17em; }
+.box-text { width: 100px; height: 42px; background: #fff; margin: 0 auto; padding: 10px 16px; text-align: center; border-radius: 5px; }
+.lines { width: 3px; height: 34px; background: #fff; margin: 0 auto; }
+.line { width: 3px; height: 32px; background: #fff; margin: 0 auto; }
+
+.add-element { width: 32px; height: 32px; background: #fff; margin: 0px auto; padding: 5px 10px; border-radius: 50%; text-align: center; display: block; cursor: pointer; }
+
+.form-field{ width: 100%; float:left; }
+.form-field h5{ color:#fff; margin-bottom: 8px; text-align: center }
+
+.left { float: inherit; }
+.right { float: right; position: absolute; color: #ff4d4d; font-size: 20px; top: -14px; right: -14px; background-color: #fff; width: 24px; height: 24px; border-radius: 50%; z-index: 6; }
+
+button{ width:98px; height:42px; color:#4C4C4C; background-color: rgba(239, 239, 239, 1); margin: 2px; border-radius: 5px; border-color: transparent; cursor: pointer; }
+button:disabled { background-color: rgba(239, 239, 239, .3); }
+
+.margin { margin:0 auto; width: 220px; position :relative; }
+
+input { font-size: 16px; width:120px; height:40px; padding:5px; margin:0 50px; border-radius:5px; border: none; text-align: center; z-index: 3; }
+/*input:hover { width: 32px; background-color: transparent; background-image: url("images/trash-icon.png"); }*/
+.trash { background-color: #f00; border-radius: 50%; position :relative; top: -30px; margin: -20px -64px; visibility: hidden; cursor: pointer; transition: height 500ms; z-index: 2; }
+input:hover + .trash { visibility: visible; }
+.trash:hover { visibility: visible; top: -30px; }
+
+.add-icon { margin: 0 auto; display: block; cursor: pointer; }
+
+.hlines { height:3px;background: #fff; }
+
+.llines { float:left;width:3px;height: 110px;background: #fff; }
+
+.add-iconl { margin: 32px 0px 0px -14px; display: block; cursor: pointer; }
+
+.rlines { float:right;width:3px;height: 110px;background: #fff; }
+
+.add-iconr { margin: 32px 0px 0px -14px; display: block; cursor: pointer; }
+
+.like-iconl { width: 32px; height: 32px; background: #66BB6A; background-image: url("../images/like-icon.png"); padding: 7px 9px; border-radius: 50%; margin: 32px 0px 0px -14px; display: block; cursor: pointer; }
+.like-iconl.active { background: #EF5350; background-image: url("../images/dlike-icon.png"); }
+
+.dislike-iconr { width: 32px; height: 32px; background: #EF5350; background-image: url("../* { margin: 0px; padding: 0px; box-sizing: border-box; }
+body { background: #d2d2d2; font-family: sarif, Arial; }
+
+/* Popup container */
+.popup {
+    position: relative;
+    display: inline-block;
+    /*cursor: pointer;*/
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+    visibility: hidden;
+    width: 232px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 8px 0;
+    position: absolute;
+    z-index: 4;
+    bottom: 125%;
+    left: 0%;
+    margin-left: -100px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle  hide and show the popup */
+.popup .show {
+    visibility: visible;
+    -webkit-animation: fadeIn 1s;
+    animation: fadeIn 1s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+    from {opacity: 0;} 
+    to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+}
+
+.box { width: 100%; font-size: 1.17em; }
+.box-text { width: 100px; height: 42px; background: #fff; margin: 0 auto; padding: 10px 16px; text-align: center; border-radius: 5px; }
+.lines { width: 3px; height: 34px; background: #fff; margin: 0 auto; }
+.line { width: 3px; height: 32px; background: #fff; margin: 0 auto; }
+
+.add-element { width: 32px; height: 32px; background: #fff; margin: 0px auto; padding: 5px 10px; border-radius: 50%; text-align: center; display: block; cursor: pointer; }
+
+.form-field{ width: 100%; float:left; }
+.form-field h5{ color:#fff; margin-bottom: 8px; text-align: center }
+
+.left { float: inherit; }
+.right { float: right; position: absolute; color: #ff4d4d; font-size: 20px; top: -14px; right: -14px; background-color: #fff; width: 24px; height: 24px; border-radius: 50%; z-index: 6; }
+
+button{ width:98px; height:42px; color:#4C4C4C; background-color: rgba(239, 239, 239, 1); margin: 2px auto; border-radius: 5px; border-color: transparent; cursor: pointer; }
+button:disabled { background-color: rgba(239, 239, 239, .3); }
+
+.margin { margin:0 auto; width: 220px; position :relative; }
+
+input { font-size: 16px; width:120px; height:40px; padding:5px; margin:0 50px; border-radius:5px; border: none; text-align: center; z-index: 3; }
+/*input:hover { width: 32px; background-color: transparent; background-image: url("images/trash-icon.png"); }*/
+.trash { background-color: #f00; border-radius: 50%; position :relative; top: -30px; margin: -20px -64px; visibility: hidden; cursor: pointer; transition: height 500ms; z-index: 2; }
+input:hover + .trash { visibility: visible; }
+.trash:hover { visibility: visible; top: -30px; }
+
+.add-icon { margin: 0 auto; display: block; cursor: pointer; }
+
+.hlines { height:3px;background: #fff; }
+
+.llines { float:left;width:3px;height: 110px;background: #fff; }
+
+.add-iconl { margin: 32px 0px 0px -14px; display: block; cursor: pointer; }
+
+.rlines { float:right;width:3px;height: 110px;background: #fff; }
+
+.add-iconr { margin: 32px 0px 0px -14px; display: block; cursor: pointer; }
+
+.like-iconl { width: 32px; height: 32px; background: #66BB6A; background-image: url("images/like-icon.png"); padding: 7px 9px; border-radius: 50%; margin: 32px 0px 0px -14px; display: block; cursor: pointer; }
+.like-iconl.active { background: #EF5350; background-image: url("images/dlike-icon.png"); }
+
+.dislike-iconr { width: 32px; height: 32px; background: #EF5350; background-image: url("images/dislike-icon.png"); padding: 7px 9px; border-radius: 50%; margin: 32px 0px 0px -14px; display: block; cursor: pointer; }
+.dislike-iconr.active { background: #66BB6A; background-image: url("images/ldislike-icon.png"); }
+
+.like-icon { margin: 110px 0px 0px -82px; display: block; cursor: pointer; }
+
+.dislike-icon { margin: 110px 0px 0px -82px; display: block; cursor: pointer; }images/dislike-icon.png"); padding: 7px 9px; border-radius: 50%; margin: 32px 0px 0px -14px; display: block; cursor: pointer; }
+.dislike-iconr.active { background: #66BB6A; background-image: url("../images/ldislike-icon.png"); }
+
+.like-icon { margin: 110px 0px 0px -82px; display: block; cursor: pointer; }
+
+.dislike-icon { margin: 110px 0px 0px -82px; display: block; cursor: pointer; }
